@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/Find_CSS.css" />
+    <script type="text/javascript" src="Script/FindFilter.js"></script>
+    <title>发现</title>
+</head>
+
+
+
+<body>
+    <div class="cartpagetitle"><a>发现商品</a></div>
+    <hr class="lineup">
+
+    <div class="choosearea">
+        <div class="chooseareatitle"><span>筛选条件:</span></div>
+        <div class="chooseconditionarea">
+        <span class="choosecondition">品牌:</span>
+            <select class="term" name="conditionterm">
+                <option name="filtertext" value="ALL">所有</option>
+                {{#each goods}}
+                    <option value="{{itembrand}}">{{itembrand}}</option>
+                {{/each}}
+            </select>
+            <input class="filterbutton" type="button" value="筛选">
+        </div>
+    </div>
+
+    <div class="typearea">
+        {{#each goods}}
+            <form method="post" action="/ItemBought">
+            <div class="item">
+                <input type="hidden" value="{{itemname}}" name="typename"/>
+                <a><img src="{{itemimageurl}}"></a>
+                <div class="typename"><a>{{itemname}}</a></div>
+                <div class="buttonarea"><input type="submit" name="check" class="checkbutton" value="查看详情"></div>
+            </div>
+            </form>
+        {{/each}}
+    </div>
+    <hr class="linedown">
+</body>
+
+
+</html>

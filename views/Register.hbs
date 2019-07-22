@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/Register&Login_CSS.css" />
+    <script src="Script/jquery.js"></script>
+    <script type="text/javascript" src="Script/Register_JavaScriptFile.js"></script>
+
+
+</head>
+<body>
+
+
+
+<div class="bgImage"></div>
+<form method="post" action="/Register/regist">
+    <fieldset class="registerField">
+        <ul class="list">
+            <li><p class="listtitle">注册</p></li>
+            <li><input type="text"  id="username" name="tusername" placeholder="输入用户名" class="inputitem" required onfocus="onfocususername()" onblur="blurusername()"></li>
+            <li><p id="usernameinfo" class="inputinfo">输入8个以上英文字母或数字</p></li>
+            <li><input type="password" id="password" name="tpassword" placeholder="输入密码" class="inputitem" required onfocus="onfocuspassword()" onblur="blurpassword()"></li>
+            <li><p id="passwordinfo" class="inputinfo">输入6个以上英文字母或数字</p></li>
+            <li><input  type="password" id="passwordcon" name="passwordCon" placeholder="重复密码" class="inputitem" required onfocus="onfocuspasswordRepeat()" onblur="blurpasswordRepeat()"></li>
+            <li><p id="passwordconinfo" class="inputinfo">再次输入密码</p></li>
+            <li class="checkboxli"><input type="checkbox" name="check" required value="" placeholder="">我已阅读并同意<a href="#" class="userlink">用户协议</a></li>
+        </ul>
+        <ul class="list">
+            <li class="registerlinkli">
+                <a>已有账号？</a>
+                <a href="Login" class="registerlink">立即登录！</a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li>
+                <button type="submit" name="submit" id="regist" class="submitbutton">注册</button>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>

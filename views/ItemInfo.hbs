@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/ItemInfo_CSS.css" />
+    <title>物品信息</title>
+</head>
+<body>
+<div class="cartpagetitle"><a>商品详情</a></div>
+
+<hr class="lineup">
+<form method="post" action="ItemInfo">
+    <div class="infofield">
+
+            <div class="itemimage"><img src ="{{ItemInfo.itemimageurl}}"></div>
+                <input type="hidden"  name="buyimage"  value="{{ItemInfo.itemimageurl}}">
+            <div class="infoarea">
+                <div class="title"><span>{{ItemInfo.itemname}}</span></div>
+
+                <input type="hidden"  name="buyname" value="{{ItemInfo.itemname}}">
+
+                <div class="detial"><span>{{ItemInfo.itemdetail}}</span></div>
+                <div class="price"><p>市场售价:<span>￥{{ItemInfo.itemprice}}</span></p></div>
+
+                <input type="hidden" name= "buyprice" value="{{ItemInfo.itemprice}}">
+                <div class="purchese"><input type="submit" value="加入购物车" /> </div>
+            </div>
+
+    </div>
+</form>
+
+<div class="cartpagetitle"><a>商品评论</a></div>
+<hr class="lineup">
+<div class="commitbox">
+    <div class="commituserphotobox">
+        <img src="/Image/UserPhoto/default.png" class="commituserphoto">
+    </div>
+    <div class="commitsubmit">
+        <form method="post" action="ItemInfo" class="commitsubmitform">
+            <textarea name="commit" class="commitarea" wrap="soft" maxlength="200" placeholder="输入200字以内的评论"></textarea>
+            <input class="commitsubmitbutton" type="submit" value="发布评论">
+        </form>
+    </div>
+</div>
+
+{{#each commit}}
+<hr class="commitgapline">
+<div class="commitdisplaybox">
+    <div class="commituserphotobox">
+        <img src="{{commit.userphoto}}" >
+    </div>
+    <div class="committextbox">
+        <div class="commituserinfo">
+            <span class="commitusername">{{commit.username}}</span>
+
+        </div>
+        <div class="committimeinfo">
+
+            <span class="committime">{{commit.commitdate}}</span>
+        </div>
+        <div class="committext">
+            {{commit.committext}}
+        </div>
+
+    </div>
+</div>
+{{/each}}
+<hr class="linedown">
+</body>
+</html>

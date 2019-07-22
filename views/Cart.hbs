@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/Cart_CSS.css"/>
+</head>
+
+<body>
+    <div class="cartpagetitle"><a>购物车</a></div>
+
+    <hr class="lineup">
+
+    <div class="cartitembox">
+        {{#each cartitem}}
+        <div class="cartitem">
+            <div class="cartimage"><img src="{{itemimageurl}}"></div>
+            <div class="cartinfoarea">
+                <div class="cartitemname"><a>{{itemname}}</a></div>
+                <div class="cartitemprice"><span>单价<span>￥{{itemprice}}</span></span></div>
+            </div>
+            <div class="cartnumberarea">
+                <div class="numbercontrol">
+                    <button class="numbercontrolbutton">-</button>
+                    <input type="text" class="cartitemnumber" name="" value="1">
+                    <button class="numbercontrolbutton">+</button>
+                </div>
+            </div>
+            <div class="cartbuttonarea">
+                <form method="post" action="/Cart" id="delete">
+                    <input type="hidden" name="deleteitem" value="{{itemname}}"/>
+                    <div class="cartbutton"><input type="submit" class="stylebutton" value="移出购物车"></div>
+                </form>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <hr class="linedown">
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/ShopItemType_CSS.css"/>
+</head>
+
+<body>
+<div class="cartpagetitle"><a>品牌分类</a></div>
+
+<hr class="lineup">
+
+    <div class="typearea">
+        {{#each itemtype}}
+            <form method="post" action="ShopItemType">
+                <input type="hidden" value="{{typename}}" name="brandname"/>
+            <div class="item"><a href="ItemInfo"><img src="{{typeimage}}"></a>
+                <div class="typename"><a href="ItemInfo">{{typename}}</a></div>
+                <div class="buttonarea"><input type="submit" name="check" class="checkbutton" value="查看详情"></div>
+             </div>
+            </form>
+        {{/each}}
+    </div>
+<hr class="linedown">
+</body>
+</html>

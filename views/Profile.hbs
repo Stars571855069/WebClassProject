@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/Profile_CSS.css" />
+    <title>Profile</title>
+</head>
+<body>
+<div class="cartpagetitle"><a>用户详情</a></div>
+
+<hr class="lineup">
+
+<div class="userinfo">
+    <div class="userinfoarea">
+        <div class="name">{{userinfo.username}}</div>
+
+        <div class="selfinst">{{userinfo.selfinst}}</div>
+    </div>
+    <div class="photoarea">
+        <div class="photo"><img src="{{ userinfo.userphotourl}}"> </div>
+    </div>
+
+</div>
+
+<hr class="linedown">
+
+
+</body>
+</html>

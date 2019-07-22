@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/Register&Login_CSS.css" />
+</head>
+
+<body>
+
+
+<div class="bgImage"></div>
+<form method="post" action="/Login">
+    <fieldset class="loginfield">
+        <ul class="list">
+            <li><p class="listtitle">登录</p></li>
+            <li><input type="text" name="lgusername" placeholder="输入用户名" class="loginitem" required></li>
+
+            <li><input type="password" name="lgpassword" placeholder="输入密码" class="loginitem" required></li>
+
+        </ul>
+        <ul class="list">
+            <li class="loginlinkli">
+                <a>没有账号？</a>
+                <a href="Register" class="registerlink">立即注册！</a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li>
+                <input type="submit" name="submit" class="loginbutton" value="登录">
+                <input type="button" name="foraget" class="loginbutton" value="忘记密码">
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

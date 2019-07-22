@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+      <link rel="stylesheet" href="stylesheets/TopNav_FooterInfo_CSS.css"/>
+      <link rel="icon" href="Image/Icon/WebIcon3.ico" type="image/x-icon"/>
+      <script src="/routes/layout.js"></script>
+  </head>
+  <body>
+  <header>
+      <nav>
+          <ul>
+              <li class="nvi"><a href="/" class="site">首页</a>
+
+              </li>
+              <li class="nvi"><a href="ItemBought" class="site">商城</a>
+                  <ul>
+                      <li class="site-content">
+                          <a href="ShopItemType">分类</a>
+
+                          <a href="Find">发现</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nvi"><a href="Search" class="site">搜索</a>
+                  <ul>
+                      <li class="site-content">
+                          <a href="Search">搜索商品</a>
+                          <a href="SearchUser">搜索用户</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nvi"><a href="#" class="site">我们</a>
+                  <ul>
+                      <li class="site-content">
+                          <a href="SopportUs">支持我们</a>
+                          <a href="#">联系我们</a>
+
+                      </li>
+                  </ul>
+              </li>
+
+
+          </ul>
+
+
+
+
+
+          <ul>
+              <li class="loginNav" >
+                  <a href="Login" name="logiubar" class="login">登录</a>
+                  <a href="Register" name="logiubar" class="login">注册</a>
+              </li>
+          </ul>
+          <div class="profile" >
+              <a href="Profile" name="userinfobar"><img src="{{userinfo.userphotourl}}"></a>
+          </div>
+      </nav>
+
+      <a href="Cart" class="cart" name="submit"> <img src="Image/Index_Image/Cart.png"></a>
+  </header>
+
+    {{{body}}}
+
+  <footer>
+      <nav>
+          <ul class="footerNAV">
+              <li>
+                  <a href="#" class="footerinfo">服务条款</a>
+                  <a href="#" class="footerinfo">重要声明</a>
+                  <a href="#" class="footerinfo">隐私政策</a>
+              </li>
+
+          </ul>
+      </nav>
+      <p class="copyrightinfo">Designed By Stars</p>
+
+  </footer>
+  </body>
+</html>

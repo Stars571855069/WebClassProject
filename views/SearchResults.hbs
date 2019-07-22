@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Image/Icon/WebIcon1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="stylesheets/ItemBought_CSS.css" />
+    <title>商品目录</title>
+</head>
+<body>
+
+
+<body>
+<div class="cartpagetitle"><a>搜索结果</a></div>
+
+<hr class="lineup">
+
+<div class="typearea">
+    {{#each goods}}
+        <form method="post" action="/SearchResults">
+            <div class="item">
+                <input type="hidden" value="{{itemname}}" name="typename"/>
+                <a><img src="{{itemimageurl}}"></a>
+                <div class="typename"><a>{{itemname}}</a></div>
+                <div class="buttonarea"><input type="submit" name="check" class="checkbutton" value="查看详情"></div>
+            </div>
+        </form>
+    {{/each}}
+</div>
+<hr class="linedown">
+</body>
+
+</body>
+</html>
