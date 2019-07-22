@@ -1,0 +1,174 @@
+/*↓↓↓↓↓↓通用CSS↓↓↓↓↓↓*/
+
+/* 购物车图标 */
+.cart{
+    margin: 0 0 0 2%;
+    outline:none;
+    border-radius: 10px;
+    background-color: transparent;
+    width:100%;
+    height:100%;
+    transition-duration: 0.4s;
+}
+.cart:hover{
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:white;
+}
+
+.cart img{
+    width:3%;
+    height:100%;
+}
+
+/* 顶部导航栏 */
+.nvi{
+    text-align: center;
+    position: relative;
+    display:inline;
+    margin:0;
+    padding:0;
+    color:gainsboro;
+    background-color:transparent;
+    list-style-type: none;
+    float: left;
+    font-family: 微软雅黑 ,serif;
+    z-index: 10;
+    width:19%;
+}
+/* 导航栏按钮 */
+.site{
+    top: 100%;
+    left:15%;
+
+    display: inline-block;
+    font-family: 微软雅黑 ,serif;
+    line-height: 200%;
+    color: black;
+    font-size: 30px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-align: center;
+    background-color:transparent;
+    margin:0 0 0 0;
+    padding:0 37% 0 37%;
+    width:auto;
+
+    height:70px;
+    transition-duration: 0.4s;
+}
+/* 顶部下拉菜单 */
+.site-content {
+    top: 100%;
+    left:15%;
+    opacity: 0.98;
+    text-align: center;
+    padding: 0;
+    width:70%;
+    display: none;
+    position: absolute;
+    z-index:10;
+    background-color:#fafafa;
+    transition-duration: 0.4s;
+    box-shadow: 5px 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.site-content a {
+    font-family: 新宋体,serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width:  0 0 0.05px 0;
+    border-color: gainsboro;
+    color: black;
+    padding:8%;
+    margin:0;
+    text-decoration: none;
+    display: block;
+    z-index:10;
+}
+.site-content a:hover {
+    background-color:gainsboro
+}
+.nvi:hover .site-content {
+    display: block;
+}
+.nvi:hover .site {
+    background-color: gainsboro;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* 注册与登录 */
+.login{
+    /* display:none; */
+    z-index:100;
+    width:10%;
+    height:4%;
+    color:black;
+    padding:6% 15% 6% 15%;
+    text-decoration:none;
+    text-transform:uppercase;
+    text-align: center;
+    background-color:transparent;
+    font-size:15px;
+    transition-duration: 0.6s;
+}
+.loginNav{
+    display:block;
+    text-align: center;
+    width:16%;
+    height:4%;
+    color:black;
+    opacity:0.7;
+
+    margin:1% 0 0 0;
+    padding:0 0.0% 0 0;
+    background-color:transparent;
+    list-style-type: none;
+    float: right;
+}
+.login:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: gray; /* Green */
+    color: white;
+    border-radius: 8px;
+}
+
+/*用户页面*/
+.profile{
+    display:none;
+    border-radius: 100%;
+    float: right;
+    width: 5%;
+    height:5%;
+    margin: 0 4% 0 0;
+}
+.profile:hover{
+    box-shadow: 5px 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 100%;
+    height:100%;
+}
+
+
+
+/* 底部信息 */
+.copyrightinfo{
+    color:gray;
+    text-align: center;
+    font-size:12px;
+}
+.footerNAV{
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+}
+.footerinfo{
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+    margin:0 2% 0 2%;
+}
+
+/*↑↑↑↑↑↑通用CSS↑↑↑↑↑↑*/

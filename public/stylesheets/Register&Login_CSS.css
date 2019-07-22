@@ -1,0 +1,152 @@
+
+    html{
+        width:1900px;
+    }
+/* 背景图片*/
+    .bgImage{
+        background-repeat:no-repeat;
+        background-position: top;
+        border: none;
+        margin:0 0 7.5% 0;
+        padding:0 0 0 0;
+        width:1550px;
+        height:auto;
+        min-height: 720px;
+        z-index: 0;
+        position:relative;
+        background-image: url("../Image/Register_Image/Register_Image.png");
+    }
+
+
+/* 注册栏*/
+    .registerField{
+        border-radius: 8px;
+        padding: 0;
+        opacity: 0.8;
+        background-color: white;
+
+        position: absolute;
+        top: 25%;
+        right:4%;
+        width:33%;
+        height:600px;
+        margin: 0;
+    }
+    .list{
+        padding: 0;
+        list-style-type: none;
+    }
+    .listtitle{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .list li{
+        display: block;
+        text-align: center;
+    }
+    .inputitem{
+        outline:none;
+        border-style: solid;
+        border-radius: 6px;
+        border-width: 2px;
+        border-color: gainsboro;
+        width:380px;
+        height:40px;
+        text-align: center;
+    }
+
+    .inputinfo{
+        margin: 0 0 4% 0;
+        font-size: 12px;
+        color:gray;
+
+    }
+    .submitbutton{
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        background-color:gray;
+        outline:none;
+        width:50%;
+        height:60px;
+        transition-duration: 0.4s;
+    }
+    .submitbutton:hover{
+        background-color: darkgray;
+        box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .checkbox{
+        margin: 10% 0 0 0;
+        font-size: 14px;
+    }
+    .checkboxli{
+        margin: 4% 0 0 0;
+        font-size: 15px;
+    }
+    .userlink:visited{
+        color: blue;
+    }
+    .registerlinkli{
+        margin: 4% 0 0 0;
+        font-size: 15px;
+    }
+    .registerlink{
+        padding: 1% 0 1% 0;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .registerlink:visited{
+        color: blue;
+    }
+
+
+/* 登录栏*/
+    .loginfield{
+        border-radius: 8px;
+        padding: 0;
+        opacity: 0.8;
+        background-color: white;
+
+        position: absolute;
+        top: 25%;
+        right:4%;
+        width:32%;
+        height:600px;
+        margin: 0;
+    }
+    .loginbutton{
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        background-color:gray;
+        outline:none;
+        width:30%;
+        height:60px;
+        transition-duration: 0.4s;
+    }
+    .loginbutton:hover{
+        background-color: darkgray;
+        box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .loginitem{
+        margin:4% 0 4% 0;
+        width:380px;
+        height:60px;
+        text-align: center;
+    }
+    .loginlinkli{
+        margin: 4% 0 4% 0;
+        font-size: 15px;
+    }
